@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Catégories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .footer {
+      width: 100%;
+      background-image: url(https://static.codia.ai/image/2026-06-16/cikYjUv0yd.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: visible auto;
+      padding-bottom: 40px;
+    }
+    .footer-inner {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+    }
+    .footer-logo {
+      width: 293px;
+      height: 128px;
+      background-image: url(https://static.codia.ai/image/2026-06-16/EQWQpgfNv2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 67px 0 58px 0;
+    }
+    .footer-columns {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .footer-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
+    }
+    .footer-col-title {
+      font-family: var(--font-inter);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .footer .footer-link {
+      padding: 2.5px 0;
+    }
+    .footer-social {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .footer-social-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(66, 71, 77, 0.2);
+      border-radius: 4px;
+    }
+    .footer-social-icon img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+    .stream-grid-mt {
+      margin-top: 33px;
+    }
+    .section-title-mt {
+      margin-top: 135px;
+    }
+    .row-gap-80 {
+      margin-top: 80px;
+    }
+    .row-gap-82 {
+      margin-top: 82px;
+    }
+    .footer-mt {
+      margin-top: 208px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="SPLY">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Acceuil</a>
+        <a href="parcourir.html" class="nav-link active">Parcourir</a>
+        <a href="categorie.html" class="nav-link">Suivis</a>
+      </div>
+      <div class="nav-search">
+        <div class="nav-search-icon">
+          <img src="https://static.codia.ai/image/2026-06-16/Mye19xAE0B.png" alt="search">
+        </div>
+        <input type="text" placeholder="Rechercher">
+      </div>
+      <div class="nav-actions">
+        <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+        <a href="sign-up.html" class="btn btn-outline">Se connecter</a>
+        <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+        <div class="nav-hamburger">
+          <img src="https://static.codia.ai/image/2026-06-16/W15c9nHnTd.png" alt="menu">
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="section-title-lg section-title-mt">Parcourir</h1>
+
+    <div class="sub-nav">
+      <button class="sub-nav-item">Diffusions en direct</button>
+      <button class="sub-nav-item active">Categories</button>
+      <button class="sub-nav-item">Clips</button>
+    </div>
+
+    <div class="separator" style="background-image:url(https://static.codia.ai/image/2026-06-16/6VTZ8o82pB.png);height:2px;margin-top:-1px"></div>
+
+    <div class="stream-grid stream-grid-mt">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Tbo8WbqeD8.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Discussion</div>
+          <div class="stream-viewers">188.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">IRL</span>
+            <span class="stream-tag">casual</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/5fQv89vbnw.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">League of Legends</div>
+          <div class="stream-viewers">22.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Action</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/R8jhaOcGmV.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">IRL</div>
+          <div class="stream-viewers">16.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/pXTSOAR2FF.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Slots & Casino</div>
+          <div class="stream-viewers">22.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">gambing</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/FAirXnNyxu.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">PUBG Mobile</div>
+          <div class="stream-viewers">85.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Tzg7OhA9fE.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Grand Theft (GTA)</div>
+          <div class="stream-viewers">19.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Action</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid row-gap-80">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/fNBLfF6vf6.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">FREE FIRE</div>
+          <div class="stream-viewers">97.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/KWWYxOzNvX.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Fortnite</div>
+          <div class="stream-viewers">75.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Lw78zEs35p.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Minecraft</div>
+          <div class="stream-viewers">185.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/1Fp9CbFf6L.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Marvel Rivals</div>
+          <div class="stream-viewers">80.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/0QUOyQarae.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Teamfight Tactics</div>
+          <div class="stream-viewers">85.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">strategy</span>
+            <span class="stream-tag">Card</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/LY43pcWGuC.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Dota 2</div>
+          <div class="stream-viewers">45.9K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Action</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid row-gap-82">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/t1gAvhzLi6.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">ARC Raiders</div>
+          <div class="stream-viewers">60.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/6N1AuaYtgh.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Échecs</div>
+          <div class="stream-viewers">79.6 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">strategy</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/O5VrUKMdF0.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Call of Duty</div>
+          <div class="stream-viewers">80.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/JmUK8EpMvy.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Tibia</div>
+          <div class="stream-viewers">254 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/nLjZVwizNS.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Jeux + Démos</div>
+          <div class="stream-viewers">39.4 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Fighting</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/k2iitNC0p2.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Lineage II</div>
+          <div class="stream-viewers">97.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid row-gap-82">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/yFjajU8HuG.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Poker</div>
+          <div class="stream-viewers">45.6 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">strategy</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/uOmVGudeHj.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Marvel's Spider-Man 2</div>
+          <div class="stream-viewers">80.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Mbgi5NQ22n.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Sports</div>
+          <div class="stream-viewers">55.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">IRL</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/sw49tjAFYD.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Call of DuResident Evil 4</div>
+          <div class="stream-viewers">80.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/PVMkcRGTD5.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">Road 96</div>
+          <div class="stream-viewers">65.1 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/3VSjYDKn0J.png)"></div>
+        <div class="stream-info">
+          <div class="stream-title">EA Sports FC 26</div>
+          <div class="stream-viewers">80.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">sport</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer footer-mt">
+      <div class="footer-inner">
+        <div class="footer-logo"><img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain"></div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <div class="footer-col-title">Company</div>
+            <span class="footer-link">About Us</span>
+            <span class="footer-link">Brand</span>
+            <span class="footer-link">News & Press</span>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Resources</div>
+            <span class="footer-link">Download</span>
+            <span class="footer-link">Help & Support</span>
+            <span class="footer-link">KICK Streamers</span>
+            <span class="footer-link">KICK Developer</span>
+            <span class="footer-link">KICK Bounties</span>
+            <span class="footer-link">KICK Shop</span>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Legal</div>
+            <span class="footer-link">Community Guidelines</span>
+            <span class="footer-link">DMCA Policy</span>
+            <span class="footer-link">Privacy Policy</span>
+            <span class="footer-link">Terms of Service</span>
+            <span class="footer-link">Cookie Settings</span>
+            <span class="footer-link">Partner Terms & Conditions</span>
+            <span class="footer-link">Bounties Terms & Conditions</span>
+            <span class="footer-link">KICKs Usage Policy</span>
+            <span class="footer-link">KICK Drops Terms</span>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Contact</div>
+            <span class="footer-link">Support: support@kick.com</span>
+            <span class="footer-link">Partners: kickpartners@kick.com</span>
+            <span class="footer-link">Press: press@kick.com</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <div class="footer-social-icon">
+            <img src="https://static.codia.ai/image/2026-06-16/KVNgN6a4sp.png" alt="social">
+          </div>
+          <div class="footer-social-icon">
+            <img src="https://static.codia.ai/image/2026-06-16/jbgsA4H5tK.png" alt="social">
+          </div>
+          <div class="footer-social-icon">
+            <img src="https://static.codia.ai/image/2026-06-16/S0Yc5NpbaB.png" alt="social">
+          </div>
+          <div class="footer-social-icon">
+            <img src="https://static.codia.ai/image/2026-06-16/Zw1Lw080CO.png" alt="social">
+          </div>
+          <div class="footer-social-icon">
+            <img src="https://static.codia.ai/image/2026-06-16/CX4AEhuJEm.png" alt="social">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
