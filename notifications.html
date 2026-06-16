@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Notifications</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="SPLY"></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Acceuil</a>
+        <a href="parcourir.html" class="nav-link">Parcourir</a>
+        <a href="suivis.html" class="nav-link">Suivis</a>
+      </div>
+      <div class="nav-search">
+        <div class="nav-search-icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Rechercher">
+      </div>
+      <div class="nav-actions">
+        <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+        <a href="login.html" class="btn btn-outline">Se connecter</a>
+        <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+        <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;max-width:var(--content-width);margin:40px auto 0;padding:0 20px">
+      <div style="font-family:Ethnocentric;font-size:28px;color:#fff">NOTIFICATIONS</div>
+      <span style="font-family:Inter;font-size:14px;color:#71c7f1;cursor:pointer">Tout marquer comme lu</span>
+    </div>
+
+    <div style="max-width:var(--content-width);margin:30px auto 0;padding:0 20px">
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:24px">Aujourd'hui</div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;background:rgba(113,199,241,0.06);border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(239,25,181,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">❤️</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#e0e0e0;line-height:1.4">
+            <strong style="color:#fff">Zerator</strong> vous a envoyé un message
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:2px">Il y a 5 minutes</div>
+        </div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#71c7f1;flex-shrink:0;margin-top:6px"></div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;background:rgba(113,199,241,0.06);border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(113,199,241,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">📺</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#e0e0e0;line-height:1.4">
+            <strong style="color:#fff">Gotaga</strong> est maintenant en direct ! "Ranked Solo"
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:2px">Il y a 15 minutes</div>
+        </div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#71c7f1;flex-shrink:0;margin-top:6px"></div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;background:rgba(113,199,241,0.06);border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(76,175,80,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🎮</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#e0e0e0;line-height:1.4">
+            <strong style="color:#fff">Squeezie</strong> a commenté votre publication
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:2px">Il y a 45 minutes</div>
+        </div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#71c7f1;flex-shrink:0;margin-top:6px"></div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🎉</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            <strong style="color:#e0e0e0">Locklear</strong> vous a suivi
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 3 heures</div>
+        </div>
+      </div>
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:32px">Cette semaine</div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🔥</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            <strong style="color:#e0e0e0">Kamelot</strong> a atteint 100 000 abonnés
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 2 jours</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">⏰</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            Rappel : le stream de <strong style="color:#e0e0e0">MIKEL</strong> commence dans 30 minutes
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 3 jours</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">💬</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            Nouveau message dans le chat de <strong style="color:#e0e0e0">Zerator</strong>
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 4 jours</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">⭐</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            <strong style="color:#e0e0e0">SPLY</strong> — Nouveau challenge disponible : "Stream 7 jours consécutifs"
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 5 jours</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;background:rgba(113,199,241,0.06);border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,193,7,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🎁</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#e0e0e0;line-height:1.4">
+            <strong style="color:#fff">Domingo</strong> vous a envoyé un cadeau pendant son stream
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:2px">Il y a 6 jours</div>
+        </div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#71c7f1;flex-shrink:0;margin-top:6px"></div>
+      </div>
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:32px">Plus tôt</div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🏆</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            Vous avez terminé le challenge "Stream 7 jours" — 500 SPLY Coins gagnés
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 2 semaines</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">📅</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            <strong style="color:#e0e0e0">Ponce</strong> a programmé un stream pour le 20 juin
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 3 semaines</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;padding:14px 16px;align-items:flex-start;border-radius:10px;margin-bottom:4px">
+        <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px">🎯</div>
+        <div style="flex:1">
+          <div style="font-family:Inter;font-size:14px;color:#9fa6ad;line-height:1.4">
+            <strong style="color:#e0e0e0">Etoiles</strong> vous a mentionné dans son chat
+          </div>
+          <div style="font-family:Inter;font-size:12px;color:#6a7077;margin-top:2px">Il y a 1 mois</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background:var(--bg-secondary);margin-top:100px;padding:84px 20px 58px;width:100%">
+      <div class="content-wrap">
+        <img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain;margin-bottom:58px">
+        <div style="display:flex;gap:20px;flex-wrap:wrap;max-width:1206px">
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Company</div>
+            <div class="footer-link">About Us</div>
+            <div class="footer-link">Brand</div>
+            <div class="footer-link">News & Press</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Resources</div>
+            <div class="footer-link">Download</div>
+            <div class="footer-link">Help & Support</div>
+            <div class="footer-link">KICK Streamers</div>
+            <div class="footer-link">KICK Developer</div>
+            <div class="footer-link">KICK Bounties</div>
+            <div class="footer-link">KICK Shop</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Legal</div>
+            <div class="footer-link">Community Guidelines</div>
+            <div class="footer-link">DMCA Policy</div>
+            <div class="footer-link">Privacy Policy</div>
+            <div class="footer-link">Terms of Service</div>
+            <div class="footer-link">Cookie Settings</div>
+            <div class="footer-link">Partner Terms & Conditions</div>
+            <div class="footer-link">Bounties Terms & Conditions</div>
+            <div class="footer-link">KICKs Usage Policy</div>
+            <div class="footer-link">KICK Drops Terms</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Contact</div>
+            <div class="footer-link">Support: support@kick.com</div>
+            <div class="footer-link">Partners: kickpartners@kick.com</div>
+            <div class="footer-link">Press: press@kick.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

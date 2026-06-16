@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Créer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="SPLY"></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Acceuil</a>
+      <a href="parcourir.html" class="nav-link">Parcourir</a>
+      <a href="suivis.html" class="nav-link">Suivis</a>
+    </div>
+    <div class="nav-search">
+      <div class="nav-search-icon"><i class="fas fa-search"></i></div>
+      <input type="text" placeholder="Rechercher">
+    </div>
+    <div class="nav-actions">
+      <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+      <a href="login.html" class="btn btn-outline">Se connecter</a>
+      <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+      <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <div style="max-width:var(--content-width);margin:40px auto 0;padding:0 20px">
+    <div style="font-family:Ethnocentric;font-size:28px;color:#fff">CRÉER UN STREAM</div>
+    <div style="font-family:Inter;font-size:14px;color:#9fa6ad;margin-top:6px">Configurez votre direct et lancez-vous</div>
+  </div>
+
+  <div style="display:flex;gap:40px;max-width:var(--content-width);margin:30px auto 0;padding:0 20px">
+    <div style="flex:1">
+      <div class="form-group" style="margin-bottom:24px">
+        <label class="form-label form-label-sm">TITRE DU STREAM</label>
+        <input type="text" class="form-input" value="Soiree gaming avec la team !" style="color:#333;font-size:16px">
+      </div>
+
+      <div class="form-group" style="margin-bottom:24px">
+        <label class="form-label form-label-sm">CATEGORIE</label>
+        <div style="display:flex;align-items:center;justify-content:space-between;height:55px;padding:16px;background:#fff;border-radius:5px;border:0.71px solid #bcbec0;cursor:pointer">
+          <span style="font-family:Epilogue;font-size:13px;color:#333">Just Chatting</span>
+          <span style="color:#9fa6ad">&#9660;</span>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:24px">
+        <label class="form-label form-label-sm">TAGS</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px;background:#fff;border-radius:5px;border:0.71px solid #bcbec0;min-height:55px;align-items:center">
+          <span style="background:rgba(113,199,241,0.15);color:#71c7f1;padding:4px 12px;border-radius:15px;font-family:Inter;font-size:13px">IRL &#10005;</span>
+          <span style="background:rgba(113,199,241,0.15);color:#71c7f1;padding:4px 12px;border-radius:15px;font-family:Inter;font-size:13px">Casual &#10005;</span>
+          <span style="background:rgba(113,199,241,0.15);color:#71c7f1;padding:4px 12px;border-radius:15px;font-family:Inter;font-size:13px">Francais &#10005;</span>
+          <span style="font-family:Inter;font-size:13px;color:#bcbec0;cursor:text">Ajouter un tag...</span>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:24px">
+        <label class="form-label form-label-sm">LANGUE</label>
+        <div style="display:flex;align-items:center;justify-content:space-between;height:55px;padding:16px;background:#fff;border-radius:5px;border:0.71px solid #bcbec0;cursor:pointer">
+          <span style="font-family:Epilogue;font-size:13px;color:#333">Francais</span>
+          <span style="color:#9fa6ad">&#9660;</span>
+        </div>
+      </div>
+
+      <div style="padding:20px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.08);margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-family:Inter;font-size:14px;font-weight:600;color:#fff">Cle de stream</div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:2px">Ne partagez jamais cette cle</div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <code style="background:rgba(0,0,0,0.4);padding:8px 12px;border-radius:4px;font-size:12px;color:#9fa6ad">live_sply_xxxx_xxxx</code>
+            <span style="background:#71c7f1;padding:8px 16px;border-radius:4px;font-family:Inter;font-size:12px;font-weight:600;color:#fff;cursor:pointer">Copier</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:16px;align-items:center">
+        <div style="background:#ef19b5;padding:14px 48px;border-radius:8px;font-family:Poppins;font-size:16px;font-weight:700;color:#fff;cursor:pointer;box-shadow:0 0 20px rgba(239,25,181,0.3)">GO LIVE</div>
+        <span style="font-family:Inter;font-size:14px;color:#9fa6ad;cursor:pointer">Enregistrer comme brouillon</span>
+      </div>
+    </div>
+
+    <div style="width:400px;flex-shrink:0">
+      <div style="background:rgba(255,255,255,0.02);border-radius:12px;border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+        <div style="width:100%;aspect-ratio:16/9;background:#1a1a1f;display:flex;align-items:center;justify-content:center;position:relative">
+          <div style="text-align:center">
+            <div style="font-size:48px;margin-bottom:8px">&#127916;</div>
+            <div style="font-family:Inter;font-size:14px;color:#9fa6ad">Apercu du stream</div>
+          </div>
+          <div style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.6);padding:6px 12px;border-radius:4px;font-family:Inter;font-size:12px;color:#fff">PREVIEW</div>
+        </div>
+        <div style="padding:16px;display:flex;gap:20px">
+          <div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad">Qualite</div>
+            <div style="font-family:Inter;font-size:14px;color:#fff;font-weight:600;margin-top:2px">1080p</div>
+          </div>
+          <div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad">FPS</div>
+            <div style="font-family:Inter;font-size:14px;color:#fff;font-weight:600;margin-top:2px">60</div>
+          </div>
+          <div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad">Debit</div>
+            <div style="font-family:Inter;font-size:14px;color:#fff;font-weight:600;margin-top:2px">6000 kbps</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;padding:16px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.08)">
+        <div style="font-family:Inter;font-size:14px;font-weight:600;color:#fff;margin-bottom:12px">Stats en direct</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+          <span style="font-family:Inter;font-size:13px;color:#9fa6ad">Dernier stream</span>
+          <span style="font-family:Inter;font-size:13px;color:#fff">Il y a 2 jours</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+          <span style="font-family:Inter;font-size:13px;color:#9fa6ad">Pics spectateurs</span>
+          <span style="font-family:Inter;font-size:13px;color:#fff">1,247</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0">
+          <span style="font-family:Inter;font-size:13px;color:#9fa6ad">Temps total</span>
+          <span style="font-family:Inter;font-size:13px;color:#fff">142h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-secondary);margin-top:100px;padding:84px 20px 58px;width:100%">
+    <div class="content-wrap">
+      <img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain;margin-bottom:58px">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;max-width:1206px">
+        <div style="flex:1;min-width:200px">
+          <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Company</div>
+          <div class="footer-link">About Us</div>
+          <div class="footer-link">Brand</div>
+          <div class="footer-link">News & Press</div>
+        </div>
+        <div style="flex:1;min-width:200px">
+          <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Resources</div>
+          <div class="footer-link">Download</div>
+          <div class="footer-link">Help & Support</div>
+          <div class="footer-link">KICK Streamers</div>
+          <div class="footer-link">KICK Developer</div>
+          <div class="footer-link">KICK Bounties</div>
+          <div class="footer-link">KICK Shop</div>
+        </div>
+        <div style="flex:1;min-width:200px">
+          <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Legal</div>
+          <div class="footer-link">Community Guidelines</div>
+          <div class="footer-link">DMCA Policy</div>
+          <div class="footer-link">Privacy Policy</div>
+          <div class="footer-link">Terms of Service</div>
+          <div class="footer-link">Cookie Settings</div>
+          <div class="footer-link">Partner Terms & Conditions</div>
+          <div class="footer-link">Bounties Terms & Conditions</div>
+          <div class="footer-link">KICKs Usage Policy</div>
+          <div class="footer-link">KICK Drops Terms</div>
+        </div>
+        <div style="flex:1;min-width:200px">
+          <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Contact</div>
+          <div class="footer-link">Support: support@kick.com</div>
+          <div class="footer-link">Partners: kickpartners@kick.com</div>
+          <div class="footer-link">Press: press@kick.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

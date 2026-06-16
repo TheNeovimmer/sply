@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Suivis</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="SPLY"></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Acceuil</a>
+        <a href="parcourir.html" class="nav-link">Parcourir</a>
+        <a href="suivis.html" class="nav-link active">Suivis</a>
+      </div>
+      <div class="nav-search">
+        <div class="nav-search-icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Rechercher">
+      </div>
+      <div class="nav-actions">
+        <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+        <a href="login.html" class="btn btn-outline">Se connecter</a>
+        <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+        <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div style="margin-top:135px;padding-left:20px">
+      <h1 class="section-title-lg">Suivis</h1>
+    </div>
+
+    <div class="sub-nav" style="margin-top:30px">
+      <button class="sub-nav-item active" style="border-top:2px solid var(--bg-live, #ff0050)">En ligne</button>
+      <button class="sub-nav-item">Tous</button>
+    </div>
+
+    <div style="width:100%;height:1px;background:rgba(217,217,217,0.35);margin:30px auto;max-width:var(--content-width)"></div>
+
+    <div class="stream-grid" style="margin-top:40px">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/54VfzvFkMm.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Discussion</div>
+          <div class="stream-viewers">188.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">IRL</span>
+            <span class="stream-tag">casual</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/YB0AgWDBPy.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">League of Legends</div>
+          <div class="stream-viewers">22.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Action</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/OePQnNGPTk.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">IRL</div>
+          <div class="stream-viewers">16.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/cpW293eeJg.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Slots & Casino</div>
+          <div class="stream-viewers">22.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">gambing</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/aFcTwY52tK.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">PUBG Mobile</div>
+          <div class="stream-viewers">85.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">shooter</span>
+            <span class="stream-tag">SPF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid" style="margin-top:40px">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Tbo8WbqeD8.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Zerator</div>
+          <div class="stream-viewers">45.2 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Variety</span>
+            <span class="stream-tag">IRL</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/5fQv89vbnw.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Kamelot</div>
+          <div class="stream-viewers">15.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Minecraft</span>
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/R8jhaOcGmV.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Gotaga</div>
+          <div class="stream-viewers">99.8 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">FPS</span>
+            <span class="stream-tag">Action</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/FAirXnNyxu.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Squeezie</div>
+          <div class="stream-viewers">32.7 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Horror</span>
+            <span class="stream-tag">Casual</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Tzg7OhA9fE.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Locklear</div>
+          <div class="stream-viewers">28.1 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Battle Royale</span>
+            <span class="stream-tag">FPS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid" style="margin-top:40px">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/fNBLfF6vf6.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Mikow</div>
+          <div class="stream-viewers">12.8 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">MOBA</span>
+            <span class="stream-tag">Action</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/KWWYxOzNvX.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">DFG</div>
+          <div class="stream-viewers">8.5 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">RPG</span>
+            <span class="stream-tag">Variety</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/Lw78zEs35p.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Xari</div>
+          <div class="stream-viewers">6.2 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">FPS</span>
+            <span class="stream-tag">Shooter</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/1Fp9CbFf6L.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Ponce</div>
+          <div class="stream-viewers">4.7 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">IRL</span>
+            <span class="stream-tag">Casual</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/eWDq7S3Wwk.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Mynthos</div>
+          <div class="stream-viewers">3.1 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Action</span>
+            <span class="stream-tag">RPG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-grid" style="margin-top:40px">
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/0QUOyQarae.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Sardoche</div>
+          <div class="stream-viewers">18.6 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Strategy</span>
+            <span class="stream-tag">MOBA</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/LY43pcWGuC.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Aypierre</div>
+          <div class="stream-viewers">22.4 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Minecraft</span>
+            <span class="stream-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/t1gAvhzLi6.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Etoiles</div>
+          <div class="stream-viewers">14.9 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">FPS</span>
+            <span class="stream-tag">Action</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/6N1AuaYtgh.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Baghera</div>
+          <div class="stream-viewers">9.3 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">Variety</span>
+            <span class="stream-tag">Casual</span>
+          </div>
+        </div>
+      </div>
+      <div class="stream-card">
+        <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/O5VrUKMdF0.png)">
+          <span class="live-badge" style="position:absolute;top:10px;left:10px">LIVE</span>
+        </div>
+        <div class="stream-info">
+          <div class="stream-title">Domingo</div>
+          <div class="stream-viewers">7.8 K Spectateurs</div>
+          <div class="stream-tags">
+            <span class="stream-tag">IRL</span>
+            <span class="stream-tag">Variety</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:none;text-align:center;padding:100px 20px">
+      <div style="font-size:64px;margin-bottom:24px">&#10024;</div>
+      <div style="font-family:Poppins,sans-serif;font-size:24px;font-weight:700;color:#ffffff;margin-bottom:12px">Vous ne suivez aucune chaîne</div>
+      <div style="font-family:Poppins,sans-serif;font-size:16px;font-weight:400;color:#9fa6ad;margin-bottom:32px">Découvrez des streamers et suivez vos favoris</div>
+      <a href="parcourir.html" class="btn btn-primary">Découvrir des streamers</a>
+    </div>
+
+    <div style="background:var(--bg-secondary);margin-top:100px;padding:84px 20px 58px;width:100%">
+      <div class="content-wrap">
+        <img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain;margin-bottom:58px">
+        <div style="display:flex;gap:20px;flex-wrap:wrap;max-width:1206px">
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Company</div>
+            <div class="footer-link">About Us</div>
+            <div class="footer-link">Brand</div>
+            <div class="footer-link">News & Press</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Resources</div>
+            <div class="footer-link">Download</div>
+            <div class="footer-link">Help & Support</div>
+            <div class="footer-link">KICK Streamers</div>
+            <div class="footer-link">KICK Developer</div>
+            <div class="footer-link">KICK Bounties</div>
+            <div class="footer-link">KICK Shop</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Legal</div>
+            <div class="footer-link">Community Guidelines</div>
+            <div class="footer-link">DMCA Policy</div>
+            <div class="footer-link">Privacy Policy</div>
+            <div class="footer-link">Terms of Service</div>
+            <div class="footer-link">Cookie Settings</div>
+            <div class="footer-link">Partner Terms & Conditions</div>
+            <div class="footer-link">Bounties Terms & Conditions</div>
+            <div class="footer-link">KICKs Usage Policy</div>
+            <div class="footer-link">KICK Drops Terms</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Contact</div>
+            <div class="footer-link">Support: support@kick.com</div>
+            <div class="footer-link">Partners: kickpartners@kick.com</div>
+            <div class="footer-link">Press: press@kick.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

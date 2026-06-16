@@ -8,11 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/style.css">
   <style>
     .footer {
       width: 100%;
-      background-image: url(https://static.codia.ai/image/2026-06-16/cikYjUv0yd.png);
+      background: var(--bg-secondary);
       background-size: cover;
       background-repeat: no-repeat;
       overflow: visible auto;
@@ -27,9 +28,6 @@
     .footer-logo {
       width: 293px;
       height: 128px;
-      background-image: url(https://static.codia.ai/image/2026-06-16/EQWQpgfNv2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
       margin: 67px 0 58px 0;
     }
     .footer-columns {
@@ -70,10 +68,9 @@
       background: rgba(66, 71, 77, 0.2);
       border-radius: 4px;
     }
-    .footer-social-icon img {
-      width: 16px;
-      height: 16px;
-      object-fit: contain;
+    .footer-social-icon i {
+      font-size: 16px;
+      color: #fff;
     }
     .stream-grid-mt {
       margin-top: 33px;
@@ -101,21 +98,17 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Acceuil</a>
         <a href="parcourir.html" class="nav-link active">Parcourir</a>
-        <a href="categorie.html" class="nav-link">Suivis</a>
+        <a href="suivis.html" class="nav-link">Suivis</a>
       </div>
       <div class="nav-search">
-        <div class="nav-search-icon">
-          <img src="https://static.codia.ai/image/2026-06-16/Mye19xAE0B.png" alt="search">
-        </div>
+        <div class="nav-search-icon"><i class="fas fa-search"></i></div>
         <input type="text" placeholder="Rechercher">
       </div>
       <div class="nav-actions">
         <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
-        <a href="sign-up.html" class="btn btn-outline">Se connecter</a>
+        <a href="login.html" class="btn btn-outline">Se connecter</a>
         <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
-        <div class="nav-hamburger">
-          <img src="https://static.codia.ai/image/2026-06-16/W15c9nHnTd.png" alt="menu">
-        </div>
+        <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
       </div>
     </nav>
 
@@ -127,7 +120,7 @@
       <button class="sub-nav-item">Clips</button>
     </div>
 
-    <div class="separator" style="background-image:url(https://static.codia.ai/image/2026-06-16/6VTZ8o82pB.png);height:2px;margin-top:-1px"></div>
+    <div class="separator" style="border-bottom:1px solid rgba(255,255,255,0.1);height:2px;margin-top:-1px"></div>
 
     <div class="stream-grid stream-grid-mt">
       <div class="stream-card">
@@ -431,19 +424,19 @@
         </div>
         <div class="footer-social">
           <div class="footer-social-icon">
-            <img src="https://static.codia.ai/image/2026-06-16/KVNgN6a4sp.png" alt="social">
+            <i class="fab fa-twitter"></i>
           </div>
           <div class="footer-social-icon">
-            <img src="https://static.codia.ai/image/2026-06-16/jbgsA4H5tK.png" alt="social">
+            <i class="fab fa-instagram"></i>
           </div>
           <div class="footer-social-icon">
-            <img src="https://static.codia.ai/image/2026-06-16/S0Yc5NpbaB.png" alt="social">
+            <i class="fab fa-youtube"></i>
           </div>
           <div class="footer-social-icon">
-            <img src="https://static.codia.ai/image/2026-06-16/Zw1Lw080CO.png" alt="social">
+            <i class="fab fa-discord"></i>
           </div>
           <div class="footer-social-icon">
-            <img src="https://static.codia.ai/image/2026-06-16/CX4AEhuJEm.png" alt="social">
+            <i class="fab fa-tiktok"></i>
           </div>
         </div>
       </div>

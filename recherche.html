@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Recherche</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="SPLY"></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Acceuil</a>
+        <a href="parcourir.html" class="nav-link">Parcourir</a>
+        <a href="suivis.html" class="nav-link">Suivis</a>
+      </div>
+      <div class="nav-search">
+        <div class="nav-search-icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Rechercher">
+      </div>
+      <div class="nav-actions">
+        <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+        <a href="login.html" class="btn btn-outline">Se connecter</a>
+        <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+        <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div style="max-width:var(--content-width);margin:40px auto 0;padding:0 20px">
+      <div style="display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.06);border-radius:12px;border:1px solid rgba(255,255,255,0.1);padding:14px 20px">
+        <span style="color:#9fa6ad;font-size:20px">🔍</span>
+        <input type="text" value="LIVE" placeholder="Rechercher des streams, catégories..." style="background:transparent;border:none;outline:none;color:#fff;font-family:Poppins;font-size:18px;width:100%">
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;max-width:var(--content-width);margin:20px auto 0;padding:0 20px">
+      <div style="font-family:Inter;font-size:15px;color:#9fa6ad">Résultats pour <strong style="color:#fff">"LIVE"</strong> — 24 résultats</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span style="font-family:Inter;font-size:14px;color:#9fa6ad">Trier par :</span>
+        <span style="font-family:Inter;font-size:14px;color:#71c7f1;cursor:pointer">Pertinence ▼</span>
+      </div>
+    </div>
+
+    <div class="category-tabs" style="margin-top:20px">
+      <button class="category-tab active">Tout</button>
+      <button class="category-tab">Chaînes</button>
+      <button class="category-tab">Catégories</button>
+      <button class="category-tab">Vidéos</button>
+    </div>
+
+    <div style="max-width:var(--content-width);margin:24px auto 0;padding:0 20px">
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">Chaînes en direct</div>
+      <div class="stream-grid stream-grid-4" style="padding:0">
+        <div class="live-card">
+          <div class="live-card-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/54VfzvFkMm.png)">
+            <span class="live-badge" style="position:absolute;top:8px;left:8px">LIVE</span>
+          </div>
+          <div class="stream-row">
+            <div class="stream-row-avatar"><img src="https://static.codia.ai/image/2026-06-16/CwkmhHq9F9.png" alt=""></div>
+            <div class="stream-row-info">
+              <div class="stream-row-name">MIKEL</div>
+              <div class="stream-row-desc">EWA ODESZŁA, TESTUJE NOWE.....</div>
+            </div>
+          </div>
+        </div>
+        <div class="live-card">
+          <div class="live-card-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/vr98QK6vbC.png)">
+            <span class="live-badge" style="position:absolute;top:8px;left:8px">LIVE</span>
+          </div>
+          <div class="stream-row">
+            <div class="stream-row-avatar"><img src="https://static.codia.ai/image/2026-06-16/un9t9WgOQg.png" alt=""></div>
+            <div class="stream-row-info">
+              <div class="stream-row-name">ElMune</div>
+              <div class="stream-row-desc">Feliz comienzo de semana | La M Mundial</div>
+            </div>
+          </div>
+        </div>
+        <div class="live-card">
+          <div class="live-card-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/xGwTWT178w.png)">
+            <span class="live-badge" style="position:absolute;top:8px;left:8px">LIVE</span>
+          </div>
+          <div class="stream-row">
+            <div class="stream-row-avatar"><img src="https://static.codia.ai/image/2026-06-16/RWe3TGiHed.png" alt=""></div>
+            <div class="stream-row-info">
+              <div class="stream-row-name">zigm</div>
+              <div class="stream-row-desc">🔥EVERY 15MIN GIVEAWAY🔥 | PACKDRAW | ROOBET|</div>
+            </div>
+          </div>
+        </div>
+        <div class="live-card">
+          <div class="live-card-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/hOHmhPZGE9.png)">
+            <span class="live-badge" style="position:absolute;top:8px;left:8px">LIVE</span>
+          </div>
+          <div class="stream-row">
+            <div class="stream-row-avatar"><img src="https://static.codia.ai/image/2026-06-16/GtQwn4qeCv.png" alt=""></div>
+            <div class="stream-row-info">
+              <div class="stream-row-name">Pact</div>
+              <div class="stream-row-desc">🏠PACTHOUSE 3 | DAY 5 | !VOTE !MYSTEERIBOXI !ARVONTA !</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;margin-top:36px">Catégories</div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div class="stream-card" style="width:219px">
+          <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/YB0AgWDBPy.png)"></div>
+          <div class="stream-info">
+            <div class="stream-title">League of Legends</div>
+            <div class="stream-viewers">22.3 K Spectateurs</div>
+          </div>
+        </div>
+        <div class="stream-card" style="width:219px">
+          <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/OePQnNGPTk.png)"></div>
+          <div class="stream-info">
+            <div class="stream-title">IRL</div>
+            <div class="stream-viewers">16.3 K Spectateurs</div>
+          </div>
+        </div>
+        <div class="stream-card" style="width:219px">
+          <div class="stream-thumb" style="background-image:url(https://static.codia.ai/image/2026-06-16/cpW293eeJg.png)"></div>
+          <div class="stream-info">
+            <div class="stream-title">Slots & Casino</div>
+            <div class="stream-viewers">22.3 K Spectateurs</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-family:Inter;font-size:13px;font-weight:600;color:#9fa6ad;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;margin-top:36px">Vidéos populaires</div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="width:320px;background:rgba(255,255,255,0.02);border-radius:8px;overflow:hidden">
+          <div style="width:100%;aspect-ratio:16/9;background-image:url(https://static.codia.ai/image/2026-06-16/aFcTwY52tK.png);background-size:cover"></div>
+          <div style="padding:10px">
+            <div style="font-family:Inter;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">MEILLEUR MOMENT DU STREAM 🔥</div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:4px">MIKEL · 45K vues</div>
+          </div>
+        </div>
+        <div style="width:320px;background:rgba(255,255,255,0.02);border-radius:8px;overflow:hidden">
+          <div style="width:100%;aspect-ratio:16/9;background-image:url(https://static.codia.ai/image/2026-06-16/5fQv89vbnw.png);background-size:cover"></div>
+          <div style="padding:10px">
+            <div style="font-family:Inter;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">TOP 5 PLAY MOMENTS 🤯</div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:4px">ElMune · 32K vues</div>
+          </div>
+        </div>
+        <div style="width:320px;background:rgba(255,255,255,0.02);border-radius:8px;overflow:hidden">
+          <div style="width:100%;aspect-ratio:16/9;background-image:url(https://static.codia.ai/image/2026-06-16/Tbo8WbqeD8.png);background-size:cover"></div>
+          <div style="padding:10px">
+            <div style="font-family:Inter;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">REVIVE ALONSO EN DIRECTO 🏆</div>
+            <div style="font-family:Inter;font-size:12px;color:#9fa6ad;margin-top:4px">zigm · 28K vues</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background:var(--bg-secondary);margin-top:100px;padding:84px 20px 58px;width:100%">
+      <div class="content-wrap">
+        <img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain;margin-bottom:58px">
+        <div style="display:flex;gap:20px;flex-wrap:wrap;max-width:1206px">
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Company</div>
+            <div class="footer-link">About Us</div>
+            <div class="footer-link">Brand</div>
+            <div class="footer-link">News & Press</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Resources</div>
+            <div class="footer-link">Download</div>
+            <div class="footer-link">Help & Support</div>
+            <div class="footer-link">KICK Streamers</div>
+            <div class="footer-link">KICK Developer</div>
+            <div class="footer-link">KICK Bounties</div>
+            <div class="footer-link">KICK Shop</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Legal</div>
+            <div class="footer-link">Community Guidelines</div>
+            <div class="footer-link">DMCA Policy</div>
+            <div class="footer-link">Privacy Policy</div>
+            <div class="footer-link">Terms of Service</div>
+            <div class="footer-link">Cookie Settings</div>
+            <div class="footer-link">Partner Terms & Conditions</div>
+            <div class="footer-link">Bounties Terms & Conditions</div>
+            <div class="footer-link">KICKs Usage Policy</div>
+            <div class="footer-link">KICK Drops Terms</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Contact</div>
+            <div class="footer-link">Support: support@kick.com</div>
+            <div class="footer-link">Partners: kickpartners@kick.com</div>
+            <div class="footer-link">Press: press@kick.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLY - Paramètres</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="SPLY"></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Acceuil</a>
+        <a href="parcourir.html" class="nav-link">Parcourir</a>
+        <a href="suivis.html" class="nav-link">Suivis</a>
+      </div>
+      <div class="nav-search">
+        <div class="nav-search-icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Rechercher">
+      </div>
+      <div class="nav-actions">
+        <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
+        <a href="login.html" class="btn btn-outline">Se connecter</a>
+        <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
+        <div class="nav-hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div style="display:flex;max-width:var(--content-width);margin:40px auto 0;padding:0 20px;gap:40px">
+      <div style="width:280px;flex-shrink:0">
+        <div style="font-family:Ethnocentric;font-size:24px;color:#fff;margin-bottom:30px">PARAMÈTRES</div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <div class="settings-nav-item active" data-section="profil" style="padding:12px 16px;cursor:pointer;font-family:Inter;font-size:15px;color:#fff;background:rgba(113,199,241,0.15);border-radius:8px;border-left:3px solid #71c7f1">Profil</div>
+          <div class="settings-nav-item" data-section="compte" style="padding:12px 16px;cursor:pointer;font-family:Inter;font-size:15px;color:#9fa6ad;border-radius:8px">Compte</div>
+          <div class="settings-nav-item" data-section="notifications" style="padding:12px 16px;cursor:pointer;font-family:Inter;font-size:15px;color:#9fa6ad;border-radius:8px">Notifications</div>
+          <div class="settings-nav-item" data-section="confidentialite" style="padding:12px 16px;cursor:pointer;font-family:Inter;font-size:15px;color:#9fa6ad;border-radius:8px">Confidentialité</div>
+        </div>
+      </div>
+
+      <div style="flex:1;min-width:0">
+        <div id="section-profil">
+          <div style="font-family:Ethnocentric;font-size:20px;color:#fff;margin-bottom:24px">Profil</div>
+          <div style="display:flex;align-items:center;gap:20px;margin-bottom:30px">
+            <img src="https://static.codia.ai/image/2026-06-16/CwkmhHq9F9.png" alt="avatar" style="width:96px;height:96px;border-radius:50%;object-fit:cover">
+            <div>
+              <div style="background:#71c7f1;padding:10px 24px;border-radius:8px;display:inline-flex;font-family:Inter;font-size:14px;font-weight:600;color:#fff;cursor:pointer">Changer la photo</div>
+              <div style="font-family:Inter;font-size:13px;color:#9fa6ad;margin-top:6px">JPG, PNG ou GIF. Max 5MB.</div>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:20px">
+            <label class="form-label form-label-sm">NOM D'UTILISATEUR</label>
+            <input type="text" class="form-input" value="MIKEL" style="color:#333">
+          </div>
+          <div class="form-group" style="margin-bottom:20px">
+            <label class="form-label form-label-sm">BIO</label>
+            <textarea class="form-input" style="height:100px;resize:vertical;font-family:Inter;padding:12px">Streamer passionné sur SPLY ! Au programme : gaming, just chatting et bonne humeur.</textarea>
+          </div>
+          <div class="form-group" style="margin-bottom:24px">
+            <label class="form-label form-label-sm">LIENS</label>
+            <input type="text" class="form-input" value="twitter.com/mikel" style="color:#333;margin-bottom:8px" placeholder="Twitter">
+            <input type="text" class="form-input" value="instagram.com/mikel" style="color:#333" placeholder="Instagram">
+          </div>
+          <div style="background:#71c7f1;padding:12px 40px;border-radius:8px;display:inline-flex;font-family:Inter;font-size:15px;font-weight:700;color:#fff;cursor:pointer">Enregistrer</div>
+        </div>
+
+        <div id="section-compte" style="display:none">
+          <div style="font-family:Ethnocentric;font-size:20px;color:#fff;margin-bottom:24px">Compte</div>
+          <div class="form-group" style="margin-bottom:20px">
+            <label class="form-label form-label-sm">EMAIL</label>
+            <input type="email" class="form-input" value="mikel@sply.tv" style="color:#333">
+          </div>
+          <div class="form-group" style="margin-bottom:20px">
+            <label class="form-label form-label-sm">NOUVEAU MOT DE PASSE</label>
+            <input type="password" class="form-input" placeholder="Nouveau mot de passe" style="color:#333">
+          </div>
+          <div class="form-group" style="margin-bottom:24px">
+            <label class="form-label form-label-sm">CONFIRMER LE MOT DE PASSE</label>
+            <input type="password" class="form-input" placeholder="Confirmer" style="color:#333">
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid rgba(255,255,255,0.1)">
+            <div>
+              <div style="font-family:Inter;font-size:15px;color:#fff">Authentification à deux facteurs (2FA)</div>
+              <div style="font-family:Inter;font-size:13px;color:#9fa6ad">Sécurisez votre compte avec 2FA</div>
+            </div>
+            <div style="width:48px;height:26px;background:#71c7f1;border-radius:13px;position:relative;cursor:pointer">
+              <div style="width:22px;height:22px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px"></div>
+            </div>
+          </div>
+          <div style="background:#71c7f1;padding:12px 40px;border-radius:8px;display:inline-flex;font-family:Inter;font-size:15px;font-weight:700;color:#fff;cursor:pointer;margin-top:10px">Enregistrer</div>
+        </div>
+
+        <div id="section-notifications" style="display:none">
+          <div style="font-family:Ethnocentric;font-size:20px;color:#fff;margin-bottom:24px">Notifications</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Nouveaux abonnés</span>
+            <div style="width:44px;height:24px;background:#71c7f1;border-radius:12px;position:relative;cursor:pointer">
+              <div style="width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px"></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Nouveaux messages</span>
+            <div style="width:44px;height:24px;background:#71c7f1;border-radius:12px;position:relative;cursor:pointer">
+              <div style="width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px"></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Suivis en ligne</span>
+            <div style="width:44px;height:24px;background:#9fa6ad;border-radius:12px;position:relative;cursor:pointer">
+              <div style="width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px"></div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Rappels de streams</span>
+            <div style="width:44px;height:24px;background:#71c7f1;border-radius:12px;position:relative;cursor:pointer">
+              <div style="width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-confidentialite" style="display:none">
+          <div style="font-family:Ethnocentric;font-size:20px;color:#fff;margin-bottom:24px">Confidentialité</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Qui peut m'envoyer des messages</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-family:Inter;font-size:13px;color:#71c7f1;cursor:pointer">Tout le monde</span>
+              <span style="color:#9fa6ad">▼</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+            <span style="font-family:Inter;font-size:15px;color:#fff">Bloquer les messages privés</span>
+            <div style="width:44px;height:24px;background:#9fa6ad;border-radius:12px;position:relative;cursor:pointer">
+              <div style="width:20px;height:20px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.settings-nav-item').forEach(item => {
+      item.addEventListener('click', function() {
+        document.querySelectorAll('.settings-nav-item').forEach(s => {
+          s.style.background = 'transparent';
+          s.style.color = '#9fa6ad';
+          s.style.borderLeft = '3px solid transparent';
+        });
+        this.style.background = 'rgba(113,199,241,0.15)';
+        this.style.color = '#fff';
+        this.style.borderLeft = '3px solid #71c7f1';
+        document.querySelectorAll('[id^="section-"]').forEach(s => s.style.display = 'none');
+        const section = document.getElementById('section-' + this.dataset.section);
+        if (section) section.style.display = 'block';
+      });
+    });
+    </script>
+
+    <footer style="width:100%;background:var(--bg-secondary);margin-top:255px;padding:84px 20px 0">
+      <div style="max-width:var(--content-width);margin:0 auto">
+        <img src="assets/images/logo.png" alt="SPLY" style="width:293px;height:128px;object-fit:contain;margin-bottom:58px">
+        <div style="display:flex;flex-wrap:wrap;gap:20px;max-width:1206px">
+          <div class="footer-col" style="min-width:200px;flex:1">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Company</div>
+            <div class="footer-link">About Us</div>
+            <div class="footer-link">Brand</div>
+            <div class="footer-link">News & Press</div>
+          </div>
+          <div class="footer-col" style="min-width:200px;flex:1">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Resources</div>
+            <div class="footer-link">Download</div>
+            <div class="footer-link">Help & Support</div>
+            <div class="footer-link">KICK Streamers</div>
+            <div class="footer-link">KICK Developer</div>
+            <div class="footer-link">KICK Bounties</div>
+            <div class="footer-link">KICK Shop</div>
+          </div>
+          <div class="footer-col" style="min-width:200px;flex:1">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Legal</div>
+            <div class="footer-link">Community Guidelines</div>
+            <div class="footer-link">DMCA Policy</div>
+            <div class="footer-link">Privacy Policy</div>
+            <div class="footer-link">Terms of Service</div>
+            <div class="footer-link">Cookie Settings</div>
+            <div class="footer-link">Partner Terms & Conditions</div>
+            <div class="footer-link">Bounties Terms & Conditions</div>
+            <div class="footer-link">KICKs Usage Policy</div>
+            <div class="footer-link">KICK Drops Terms</div>
+          </div>
+          <div class="footer-col" style="min-width:200px;flex:1">
+            <div style="font-family:Inter;font-size:16px;font-weight:700;color:#fff;margin-bottom:4px">Contact</div>
+            <div class="footer-link">Support: support@kick.com</div>
+            <div class="footer-link">Partners: kickpartners@kick.com</div>
+            <div class="footer-link">Press: press@kick.com</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">
+          <div style="width:40px;height:40px;background:rgba(66,71,77,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center">
+            <i class="fab fa-twitter" style="color:#fff;font-size:16px"></i>
+          </div>
+          <div style="width:40px;height:40px;background:rgba(66,71,77,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center">
+            <i class="fab fa-instagram" style="color:#fff;font-size:16px"></i>
+          </div>
+          <div style="width:40px;height:40px;background:rgba(66,71,77,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center">
+            <i class="fab fa-youtube" style="color:#fff;font-size:16px"></i>
+          </div>
+          <div style="width:40px;height:40px;background:rgba(66,71,77,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center">
+            <i class="fab fa-discord" style="color:#fff;font-size:16px"></i>
+          </div>
+          <div style="width:40px;height:40px;background:rgba(66,71,77,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center">
+            <i class="fab fa-tiktok" style="color:#fff;font-size:16px"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

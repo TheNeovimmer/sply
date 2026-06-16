@@ -6,6 +6,7 @@
   <title>SPLY - Streameur</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -17,20 +18,20 @@
     <div class="nav-links">
       <a href="index.html" class="nav-link">Acceuil</a>
       <a href="parcourir.html" class="nav-link">Parcourir</a>
-      <a href="categorie.html" class="nav-link active">Suivis</a>
+      <a href="suivis.html" class="nav-link active">Suivis</a>
     </div>
     <div class="nav-search">
       <div class="nav-search-icon">
-        <img src="https://static.codia.ai/image/2026-06-16/9i4SWFWLi4.png" alt="search">
+        <i class="fas fa-search"></i>
       </div>
       <input type="text" placeholder="Rechercher">
     </div>
     <div class="nav-actions">
       <button id="hamburger-btn" class="mobile-hamburger">&#9776;</button>
-      <a href="sign-up.html" class="btn btn-outline">Se connecter</a>
+      <a href="login.html" class="btn btn-outline">Se connecter</a>
       <a href="sign-up.html" class="btn btn-primary">S'inscrire</a>
       <div class="nav-hamburger">
-        <img src="https://static.codia.ai/image/2026-06-16/00xEtBtUtQ.png" alt="menu">
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </nav>
@@ -39,7 +40,7 @@
     <div class="streamer-video" style="background-image: url(https://static.codia.ai/image/2026-06-16/eVBPYxMZ1K.png)">
       <div class="streamer-video-top">
         <div class="live-badge live-badge-large">
-          <img src="https://static.codia.ai/image/2026-06-16/4e0MN2WAZM.png" alt="" style="width:13px;height:12px;object-fit:contain">
+          <i class="fas fa-circle" style="color:#fff;font-size:10px;margin-right:4px"></i>
           LIVE
         </div>
         <div class="streamer-viewer-count">229.8k</div>
@@ -56,17 +57,17 @@
           <div class="streamer-vote-opt">B</div>
           <div class="streamer-vote-opt">C</div>
           <div class="streamer-vote-opt">
-            <img src="https://static.codia.ai/image/2026-06-16/ZsyuYbhZSg.png" alt="">
+            <i class="fas fa-star" style="font-size:24px;color:#fff"></i>
           </div>
         </div>
         <button class="btn-vote" style="margin-top:17px;width:297px">vote</button>
       </div>
 
       <div class="streamer-progress">
-        <img src="https://static.codia.ai/image/2026-06-16/Ln5H6GPT1F.png" alt="" style="width:24px;height:24px;object-fit:contain">
-        <img src="https://static.codia.ai/image/2026-06-16/r315wwNdzW.png" alt="" style="width:18px;height:18px;object-fit:contain">
+        <i class="fas fa-play" style="color:#71c7f1;font-size:20px"></i>
+        <i class="fas fa-forward" style="color:#fff;font-size:16px"></i>
         <div class="streamer-progress-bar">
-          <div class="streamer-progress-fill" style="background-image:url(https://static.codia.ai/image/2026-06-16/TWSBGOcszd.png);width:67%"></div>
+          <div class="streamer-progress-fill" style="background:var(--accent-blue);width:67%"></div>
           <div class="streamer-progress-track"></div>
         </div>
         <span class="streamer-progress-time">60:00</span>
@@ -76,15 +77,13 @@
     <aside class="chat-sidebar">
       <div class="chat-header">
         <div class="chat-title">
-          <div class="chat-dot" style="background-image:url(https://static.codia.ai/image/2026-06-16/npn05Fqmk1.png);background-size:cover"></div>
           <span style="font-family:'Ethnocentric',sans-serif;font-size:18px;font-weight:400;color:#fff">live chat</span>
-          <img src="https://static.codia.ai/image/2026-06-16/bdfjadfvjO.png" alt="" style="width:80px;height:27px;object-fit:cover">
         </div>
         <span style="font-size:32px;font-weight:900;color:#8888a0;font-family:Inter,sans-serif;line-height:38.727px">&#8801;</span>
       </div>
 
       <div style="padding:0 26.5px">
-        <img src="https://static.codia.ai/image/2026-06-16/PNUszsDRtE.png" alt="" style="width:100%;height:1px;object-fit:cover">
+        <div style="width:100%;height:1px;background:rgba(255,255,255,0.1)"></div>
       </div>
 
       <div class="chat-messages">
@@ -261,7 +260,7 @@
 
       <div class="chat-actions">
         <button class="chat-action-btn" style="padding:7px 25px 6px">
-          <img src="https://static.codia.ai/image/2026-06-16/SwJteSDic9.png" alt="" style="width:34px;height:17px;object-fit:contain">
+          <i class="fas fa-gift" style="font-size:18px;color:#ccc"></i>
         </button>
         <button class="chat-action-btn" style="padding:7px 30px 6px 16px"></button>
         <button class="chat-action-btn" style="padding:7px 29px 6px 24px"></button>
@@ -276,7 +275,7 @@
       <div style="flex:1;max-width:945px;display:flex;flex-direction:column;gap:22px">
         <div style="background:rgba(217,217,217,0.02);border-radius:20px;border:0.5px solid #9fa6ad;padding:19px 20px 20px 14px">
           <div style="display:flex;gap:8px;align-items:flex-start">
-            <img src="https://static.codia.ai/image/2026-06-16/umS1J8uxEr.png" alt="" style="width:20px;height:19px;object-fit:cover;border-radius:27px;margin-top:3px">
+              <i class="fas fa-bolt" style="color:#71c7f1;font-size:18px;margin-top:3px"></i>
             <span style="font-family:'Ethnocentric',sans-serif;font-size:20px;font-weight:400;color:#71c7f1">Defi Actuel</span>
             <span style="font-family:'Ethnocentric',sans-serif;font-size:20px;font-weight:400;color:#71c7f1;margin-left:auto;margin-right:80px">TIME REMAINING</span>
           </div>
@@ -300,7 +299,7 @@
               <div style="font-family:Inter,sans-serif;font-size:14px;font-weight:700;color:#888899">CHALLENGE STATS</div>
               <div style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#666688;margin-top:9.5px">PARTICIPANTS</div>
               <div style="font-family:Inter,sans-serif;font-size:18px;font-weight:700;color:#fff;margin-top:9.5px">1,842</div>
-              <img src="https://static.codia.ai/image/2026-06-16/0mzWTHNLrm.png" alt="" style="width:100%;height:1px;margin:7px 0 10px;object-fit:cover">
+              <div style="width:100%;height:1px;background:rgba(255,255,255,0.1);margin:7px 0 10px"></div>
               <div style="font-family:Inter,sans-serif;font-size:14px;font-weight:500;color:#666688">TOTAL VOTES</div>
               <div style="font-family:Inter,sans-serif;font-size:18px;font-weight:700;color:#fff;margin-top:11.5px">5,216</div>
             </div>
@@ -324,7 +323,7 @@
             <div style="display:flex;align-items:center;gap:8px">
               <div>
                 <span style="font-family:Poppins,sans-serif;font-size:14px;font-weight:800;color:#fff">MIKOFFICIEL</span>
-                <img src="https://static.codia.ai/image/2026-06-16/1DELnNnejM.png" alt="" style="width:14px;height:14px;object-fit:contain;display:inline;vertical-align:middle">
+                <i class="fas fa-badge-check" style="color:#71c7f1;font-size:14px;display:inline;vertical-align:middle"></i>
                 <br>
                 <span style="font-family:Poppins,sans-serif;font-size:12px;font-weight:500;color:#fff">OHH LA LAA PTDRRR L E FOUUU</span>
               </div>
@@ -339,7 +338,7 @@
           </div>
           <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
             <div style="display:flex;align-items:center;gap:4px">
-              <img src="https://static.codia.ai/image/2026-06-16/ti1x2jJXwK.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-eye" style="color:#ef19b5;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:700;color:#ef19b5">99.8k</span>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:700;color:#929ea6">Viewers</span>
             </div>
@@ -350,7 +349,7 @@
           </div>
           <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
             <button style="display:flex;align-items:center;gap:6px;padding:8px 12px;background:#ef19b5;border-radius:4px;border:none;cursor:pointer;box-shadow:0 0 4px 0 rgba(0,0,0,0.25);font-family:Inter,sans-serif;font-size:16px;font-weight:600;color:#fff">
-              <img src="https://static.codia.ai/image/2026-06-16/D32hnY0hiY.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-heart" style="color:#fff;font-size:16px"></i>
               Suivre
             </button>
             <span style="display:flex;align-items:center;gap:6px;font-family:Inter,sans-serif;font-size:16px;font-weight:600;color:#fff;cursor:pointer">
@@ -364,33 +363,33 @@
           <div style="display:flex;align-items:center;gap:12px">
             <div style="display:flex;align-items:center;gap:4px">
               <span style="font-family:Inter,sans-serif;font-size:16px;font-weight:700;color:#fff">About MIKOFFICIEL</span>
-              <img src="https://static.codia.ai/image/2026-06-16/AiRirowxuM.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-check-circle" style="color:#71c7f1;font-size:16px"></i>
             </div>
             <div style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#71c7f1">115.6K <span style="color:#9fa6ad">Followers</span></div>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:16px">
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/z8myiMRqx3.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">Mikofficiel</span>
             </div>
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/VedSs7GGbm.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">Mikofficiel</span>
             </div>
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/KfNVZ8ehv2.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">Mikofficiel</span>
             </div>
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/uPpBPUJVkb.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">Mikofficiel</span>
             </div>
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/BS3aohjkh7.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">SS4jBWkVYv</span>
             </div>
             <div style="display:flex;align-items:center;gap:6px;padding:8px;border-radius:4px;min-height:36px">
-              <img src="https://static.codia.ai/image/2026-06-16/KubrgXYOQN.png" alt="" style="width:16px;height:16px;object-fit:contain">
+              <i class="fas fa-link" style="color:#71c7f1;font-size:16px"></i>
               <span style="font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:#fff">Mikoofficiel</span>
             </div>
           </div>
@@ -400,7 +399,7 @@
           </div>
         </div>
 
-        <img src="https://static.codia.ai/image/2026-06-16/wXdOPUnzCD.png" alt="" style="width:60px;height:12px;object-fit:contain;margin-top:-10px">
+        
       </div>
 
       <div style="width:463px;flex-shrink:0;background:rgba(10,28,50,0.46);border-radius:10px;border:1px solid #1a3a5a;padding:22px 15px 15px 11px;overflow:hidden;position:relative">
