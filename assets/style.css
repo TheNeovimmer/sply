@@ -166,17 +166,6 @@ img {
   align-items: center;
 }
 
-.nav-hamburger {
-  width: 23px;
-  height: 23px;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 20px;
-}
-
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -1665,9 +1654,6 @@ img {
   .nav-actions .btn-outline,
   .nav-actions .btn-primary {
     display: none;
-  }
-  .nav-hamburger {
-    display: block;
   }
   .filter-group {
     flex-wrap: wrap;
